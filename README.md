@@ -76,3 +76,10 @@ Everything needed to build this app lives in this directory. `ClipperKit` is an 
 - The SDK makes usage-metadata requests when connected. The recording and transcript are processed locally.
 
 API references: [SDK README](https://github.com/Desert-Ant-Labs/desert-ant-core/blob/v3.1.0/README.md), [Clips](https://github.com/Desert-Ant-Labs/desert-ant-core/blob/v3.1.0/docs/models/clips.md), [Voz](https://github.com/Desert-Ant-Labs/desert-ant-core/blob/v3.1.0/docs/models/voz.md).
+
+## Licenses
+
+Clipper's own source code is under the [MIT License](LICENSE). The dependencies keep their own licenses:
+
+- **Clips and Voz models and the desert-ant-core SDK**, by [Desert Ant Labs](https://desertant.com): [Desert Ant Labs Source-Available License 1.0](https://license.desertant.com/1.0). This is not an open-source license. It is free below 100,000 monthly active devices per platform for each model, needs a commercial license above that, forbids using the models or their outputs to train a competing on-device model, and requires in-app credit (shown in the app's About sheet).
+- **FFmpeg**, via [ffmpeg-kit](https://github.com/jaywcjlove/ffmpeg-kit): the bundled build is configured with `--enable-gpl --enable-version3 --enable-libx264`, so the FFmpeg frameworks in the DMG are under the GPL v3.

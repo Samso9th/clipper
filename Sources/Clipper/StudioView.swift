@@ -534,6 +534,9 @@ struct StudioView: View {
             Text("Clips finds highlights in transcripts. Voz transcribes recordings. Both models run locally after their initial downloads.")
             Text("The SDK sends usage metadata when connected. Recordings and transcript content are processed on your device.")
             Text("Exports keep the original framing: MOV for video and M4A for audio. Save or share exports before replacing the recording. This workspace is temporary.")
+            // Required by the Desert Ant Labs Source-Available License: https://license.desertant.com/attribution
+            Text("Clips and Voz models by [Desert Ant Labs](https://desertant.com), under the [Desert Ant Labs Source-Available License](https://license.desertant.com/1.0). Video conversion by [FFmpeg](https://ffmpeg.org).")
+                .font(.callout)
             Text("Tide uses native Liquid Glass on iOS 26 and macOS 26, with material fallbacks on older supported versions.")
                 .font(.caption).foregroundStyle(.secondary)
         }
